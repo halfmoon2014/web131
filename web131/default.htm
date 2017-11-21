@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function login() {
+            $.ajax({ type: 'post',
+                url: 'Handler1.ashx',
+                data: { usr: document.getElementById("usr").value },
+                error: function () {
+                    alert("连接错误,请检查");
+                },
+                success: function (data) {
+                    if (data == "ok") {
+                        alert("session ok");
+                        //window.location.href = "HTMLPage1.htm";
+                    } else {
+                        alert("登陆失败,请检查用户名与密码是否正确");
+                    }
+                }
+            })
+        }
+        function go(i) {
+            if (i == 1) {
+                window.location.href = "HTMLPage1.htm";
+            } else if (i == 2) {
+                window.location.href = "Default.aspx";
+            } else if (i == 3) {
+                window.location.href = "HTMLPage2.aspx";
+            } else if (i == 4) {
+                window.location.href = "other.BookDetail";
+            }
+        }
+    </script>
+</head>
+<body>
+<form action="#">
+    <input type="text" id="usr" />
+    <input type="button" onclick="login()" value="login" />
+    <input type="button" onclick="go(1)" value="htm" />
+    <input type="button" onclick="go(2)" value="aspx" />
+    <input type="button" onclick="go(3)" value="htm.aspx" />
+    <input type="button" onclick="go(4)" value="other" />
+</form>
+</body>
+</html>

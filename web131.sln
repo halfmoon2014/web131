@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web131", "web131\web131.csproj", "{EA5862B9-4175-4B25-809A-E461E46404EB}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.1.204:8080/tfs/web_ss
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = web131\\web131.csproj
+		SccProjectName1 = web131
+		SccLocalPath1 = web131
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA5862B9-4175-4B25-809A-E461E46404EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA5862B9-4175-4B25-809A-E461E46404EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA5862B9-4175-4B25-809A-E461E46404EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA5862B9-4175-4B25-809A-E461E46404EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
